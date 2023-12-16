@@ -16,14 +16,19 @@ public class Main {
       String cmd = sc.nextLine();
       System.out.printf("입력된 명령어 : %s\n",cmd);
 
-      if (cmd.equals("exit")) {
-        System.out.println("프로그램을 종료합니다.");
-        break;
+      if (cmd.equals("/usr/article/write")) {
+        System.out.println("== 게시물 등록 ==");
+        String cmds = sc.nextLine();
+        System.out.printf("제목  : %s\n",cmds);
+        String cmdss = sc.nextLine();
+        System.out.printf("내용  : %s\n",cmdss);
+        System.out.println("== 1번 게시물이 등록되었습니다. ==");
+        continue;
       }
     }
 
-    System.out.println("== 게시판 실행 끝 ==");
+//    System.out.println("== 게시판 실행 끝 ==");
 
-    sc.close();
+//    sc.close();
   }
 }
